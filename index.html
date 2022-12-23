@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME | DRISHTI'23</title>
+    <link rel="stylesheet" href="/index.css" />
+
+    <!-- bootstrap  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- iconic fonts  -->
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+
+    <!-- google fonts preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Poppins:wght@300&family=Rubik+Mono+One&family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-family: 'Courgette', cursive;
+         font-family: 'EB Garamond', serif;
+         font-family: 'Indie Flower', cursive;
+         font-family: 'Poppins', sans-serif;
+         font-family: 'Rubik Mono One', sans-serif;
+         font-family: 'Source Sans Pro', sans-serif;
+        -->
+
+    <!-- animation on scroll  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+  </head>
+  <body>
+    <div id="loader">
+      <img src="./assets/loader.gif" width="30%" height="auto" />
+    </div>
+    <!-- navbar  -->
+    <header id="header" class="fixed-top">
+      <div class="logo">
+        <img src="./assets/Drishti_logo.png" alt="drishti_logo" />
+        <a href="" class="headerLogo">Team Drishti</a>
+      </div>
+      <nav class="nav" id="navMenu">
+        <ion-icon
+          name="close-outline"
+          id="header_close"
+          class="close"
+        ></ion-icon>
+        <ul class="navList">
+          <li class="navItem"><a href="" class="navLink">Home</a></li>
+          <li class="navItem"><a href="" class="navLink">About Us</a></li>
+          <li class="navItem"><a href="" class="navLink">Purvarang</a></li>
+          <li class="navItem"><a href="" class="navLink">Our Team</a></li>
+          <li class="navItem"><a href="" class="navLink">gallery</a></li>
+        </ul>
+      </nav>
+      <ion-icon name="menu-outline" id="header_menu" class="menu"></ion-icon>
+    </header>
+    <!-- HeroCrousal  -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div id="slide1" class="carousel-item active">
+          <div class="container" id="cont1">
+            <h1>Revinear</h1>
+            <p>Immenting Back Stronger</p>
+            <a href="#" class="btn btn-sm btn-light">view gallery</a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item">
+          <div class="container">
+            <h1>Exebition '22</h1>
+            <p>Drishti Organizes it every year</p>
+            <a href="#" class="btn btn-sm btn-info">view gallery</a>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item">
+          <div class="container">
+            <h1>FacePainting '22</h1>
+            <p>Express yourself with Colors</p>
+            <a href="#" class="btn btn-sm btn-warning">view gallary</a>
+          </div>
+        </div>
+        <div id="slide4" class="carousel-item">
+          <div class="container">
+            <h1>MoonLit Mic '22</h1>
+            <p>standup, singing, poetry anything the stage is yours</p>
+            <a href="#" class="btn btn-sm btn-success">view gallery</a>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#myCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#myCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- AboutUsSection  -->
+    <section class="aboutUsSection">
+      <div class="aboutusHead">About Us</div>
+      <div class="aboutSectionContainer">
+        <div class="drishtiYearLogo">
+          <div class="title">Team Drishti</div>
+          <div class="theme">REVINER</div>
+          <div class="drishtiYearLogoImg">
+            <img src="./assets/yearlogo.jpg" alt="Year_Logo" />
+          </div>
+        </div>
+        <div class="drishtiInfo">
+          <p class="ParaInfo">
+            Drishti is the official magazine of SGGSIE&T, it is completely
+            designed by a team of students.
+            <br />
+            <br />
+            Drishti is not just about the magazine, instead every year Team
+            Drishti organize certain events and programs that are a blend of
+            artistic abilities and creativity.
+            <br />
+            <br />
+            Exhibition is one of the main attractions of Team Drishti, displayed in the AB halls of admin
+            building in the institute itself. In this, exhibition, all the
+            artworks, literary works, photographs by the students of SGGS are
+            displayed along with some exhibits made my the team.
+            <br />
+            <br />
+            Drishti is all about spreading love and bonding people through art,
+            completing 40 years gracefully.
+          </p>
+          <br />
+
+          <a href="./downloadables" download="magzine-2020.pdf" class="downBtn">Download Magazine</button>
+        </div>
+      </div>
+    </section>
+    <!-- all magazines preview -->
+    <section class="magazineSection">
+      <div class = "section-Title">
+        <span style="color: black;">Previous</span>
+        <span style="color: #fedb39;">Magazine</span>
+      </div>
+      <div class="wrapper">
+        <div class="Mycard">
+          <img class = "cardImg" src="./assets/adhvan.jpg" alt="adhvan">
+          <div class = "cardInfo">
+            <h3 class = "card-Title">ADHVAN</h3>
+            <p class = "cardPara">ThemeOfYear</p>
+            <a herf="#" download="#" class = "cardDownBtn">Download</a>
+          </div>
+        </div>
+        <div class="Mycard">
+          <img class = "cardImg" src="./assets/antarnaad.jpg" alt="antarnaad">
+          <div class = "cardInfo">
+            <h3 class = "card-Title">ANTARNAAD</h3>
+            <p class = "cardPara">ThemeOfYear</p>
+            <a herf="#" download="#" class = "cardDownBtn">Download</a>
+          </div>
+        </div>
+        <div class="Mycard">
+          <img class = "cardImg" src="./assets/dhruti.jpg" alt="dhruti">
+          <div class = "cardInfo">
+            <h3 class = "card-Title">DHRUTI</h3>
+            <p class = "cardPara">ThemeOfYear</p>
+            <a herf="#" download="#" class = "cardDownBtn">Download</a>
+          </div>
+        </div>
+        <div class="Mycard">
+          <img class = "cardImg" src="./assets/sparkle.jpg" alt="sparkle">
+          <div class = "cardInfo">
+            <h3 class = "card-Title">SPARKLE</h3>
+            <p class = "cardPara">ThemeOfYear</p>
+            <a herf="#" download="#" class = "cardDownBtn">Download</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- purvarang section  -->
+    <!-- <section class="purvarangSection">
+      <div class="purvarangHead">About Us</div>
+      <div class="purvarangContainer">
+        <div class="purvarangYearLogo">
+          <div class="purvtitle">Team Drishti</div>
+          <div class="purvtheme">REVINER</div>
+          <div class="drishtiYearLogoImg">
+            <img src="./assets/yearlogo.jpg" alt="Year_Logo" />
+          </div>
+        </div>
+        <div class="drishtiInfo">
+          <p class="ParaInfo">
+            Drishti is the official magazine of SGGSIE&T, it is completely
+            designed by a team of students.
+            <br />
+            <br />
+            Drishti is not just about the magazine, instead every year Team
+            Drishti organize certain events and programs that are a blend of
+            artistic abilities and creativity.
+            <br />
+            <br />
+            Exhibition is one of the main attractions of Team Drishti, displayed in the AB halls of admin
+            building in the institute itself. In this, exhibition, all the
+            artworks, literary works, photographs by the students of SGGS are
+            displayed along with some exhibits made my the team.
+            <br />
+            <br />
+            Drishti is all about spreading love and bonding people through art,
+            completing 40 years gracefully.
+          </p>
+          <br />
+
+          <a href="./downloadables" download="magzine-2020.pdf" class="downBtn">Download Magazine</button>
+        </div>
+      </div>
+    </section> -->
+
+  </body>
+
+  <script src="/index.js"></script>
+
+  <!-- jquerry -->
+  <script src="https://code.jquery.com/jquery-3.6.2.js"></script>
+  <!-- bootstrap -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- iconic  -->
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
+
+  <!-- animation on scroll library  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+</html
