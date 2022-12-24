@@ -52,7 +52,7 @@ header {
   justify-content: space-around;
   padding: 0.5rem 0;
   align-items: center;
-  z-index: 300;
+  z-index: 10;
 }
 
 .bgcolor-scrolled {
@@ -290,6 +290,7 @@ header {
 
 .aboutUsSection {
   width: 100vw;
+  height: 90vh;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -355,7 +356,7 @@ header {
   width: 95%;
 }
 
-.downBtn {
+.drishtiInfo a {
   border: none;
   background-color: transparent;
   color: #fedb39;
@@ -368,7 +369,7 @@ header {
 
 /* activate transition  */
 
-.downBtn:hover {
+.drishtiInfo a:hover {
   background-color: #fedb39;
   color: white;
   transition: all 1s ease-in;
@@ -377,7 +378,7 @@ header {
 @media screen and (max-width: 768px) {
   .aboutUsSection {
     top: 50vh;
-    /* height: 80vh; */
+    height: auto;
   }
   .aboutSectionContainer {
     flex-direction: column;
@@ -418,7 +419,7 @@ header {
     text-align: center;
   }
 
-  .downBtn {
+  .drishtiInfo a {
     margin-bottom: 20px;
   }
 }
@@ -427,7 +428,7 @@ header {
 
 .magazineSection {
   width: 100vw;
-  height: 80vh;
+  height: 70vh;
   position: absolute;
   top: 190vh;
   right: 0;
@@ -438,6 +439,7 @@ header {
   justify-content: center;
   background-color: white;
   margin: 10px 0px 10px 0px;
+  z-index: -1;
 }
 
 .section-Title {
@@ -445,6 +447,8 @@ header {
   font-size: 2rem;
   font-weight: 500;
   text-align: center;
+  margin-bottom: 40px;
+  text-decoration: none;
 }
 
 .wrapper {
@@ -525,11 +529,11 @@ header {
   transform: translateY(0px);
 }
 
-.card-Title {
+.Mycard .cardInfo .card-Title {
   margin: 0;
 }
 
-.cardPara {
+.Mycard .cardInfo .cardPara {
   letter-spacing: 1px;
   font-size: 15px;
   margin-top: 8px;
@@ -553,15 +557,102 @@ header {
 
 @media screen and (max-width: 768px) {
   .magazineSection {
-    top: 190vh;
+    top: 165vh;
     height: auto;
   }
 
   .section-Title {
-    margin-top: 80px;
+    margin-top: 10px;
+    margin-bottom: 30px;
   }
   .wrapper {
     flex-direction: column;
     gap: 30px;
+  }
+}
+
+/* purvarang section */
+.purvarangSection {
+  position: absolute;
+  top: 270vh;
+  left: 0;
+  right: 0;
+  background-color: #ffffd0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100vw;
+  height: 80vh;
+}
+
+.leftPurva {
+  width: 45%;
+}
+
+.leftPurva .purva_sub_head {
+  font-size: medium;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.leftPurva .purvarangHead {
+  font-size: 3rem;
+  font-family: "EB Garamond", serif;
+  font-weight: 500;
+}
+
+.leftPurva .puravarangContainer {
+  width: 30%;
+}
+
+.leftPurva .puravarangContainer .purvaInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+
+/* #viewBtn {
+  text-decoration: underline;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 5px 10px;
+  color: rgb(255, 255, 255);
+  background-color: #ff6d28;
+}
+
+#viewBtn:hover {
+  text-decoration: none;
+  color: #ff6d28;
+  border-color: #ff6d28;
+  background-color: #f6fbff;
+  transition: 0.5s all ease-in-out;
+  padding: 5px 10px;
+} */
+
+.purvarangYearLogo {
+  width: 400px;
+}
+
+@media screen and (max-width: 768px) {
+  .purvarangSection {
+    flex-direction: column-reverse;
+    top: 370vh;
+    height: 130vh;
+  }
+  .leftPurva {
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    text-align: center;
+  }
+  .purvarangYearLogo {
+    width: 300px;
+  }
+  .purvarangYearLogo img {
+    width: 300px;
   }
 }
