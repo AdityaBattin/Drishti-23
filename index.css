@@ -804,9 +804,10 @@ header {
 @media screen and (max-width: 768px) {
   .footer-distributed {
     top: 580vh;
-    height: 60vh;
+    height: 50vh;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 20px;
   }
   .footer-divider {
     height: 1px;
@@ -815,15 +816,15 @@ header {
   }
   .footer-left {
     width: 90%;
-    height: 60%;
+    height: 30%;
     justify-content: center;
   }
   .footer-right {
     width: 90%;
-    height: 60%;
+    height: 30%;
     text-align: center;
     justify-content: center;
-    gap: 50px;
+    gap: 20px;
   }
   .logo {
     display: flex;
