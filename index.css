@@ -458,20 +458,6 @@ header {
   #button_mobile {
     display: inline;
   }
-
-  .pdf_container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 0;
-    height: 100vh;
-    width: 100vw;
-  }
-
-  .pdf_container embed {
-    width: 100px;
-    height: 200px;
-  }
 }
 
 /* all magazines preview */

@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+@media screen and (max-width: 768px) {
+  .pdf_container {
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    right: 0; */
+    height: 100px;
+    width: 100vw;
+  }
+
+  .pdf_container embed {
+    width: 100vw;
+    height: 200vh;
+  }
+
+  embed {
+    overflow-clip-margin: content-box !important;
+    overflow: clip !important;
+  }
+}
