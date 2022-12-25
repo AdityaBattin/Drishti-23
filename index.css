@@ -106,6 +106,10 @@ header {
   display: none;
 }
 
+.active {
+  border-bottom: solid white;
+}
+
 @media screen and (max-width: 768px) {
   header {
     height: 48px;
@@ -308,6 +312,8 @@ header {
   font-size: x-large;
   margin: 20px 20px;
   padding: 10px 10px;
+  color: #0002a1;
+  font-weight: 549;
 }
 
 .aboutSectionContainer {
@@ -380,6 +386,11 @@ header {
     top: 50vh;
     height: auto;
   }
+
+  .aboutusHead {
+    font-size: 25px;
+  }
+
   .aboutSectionContainer {
     flex-direction: column;
   }
@@ -421,6 +432,45 @@ header {
 
   .drishtiInfo a {
     margin-bottom: 20px;
+  }
+}
+
+/* modal preview  */
+
+#button_mobile {
+  display: none;
+}
+
+.pdf_container {
+  height: 80vh;
+}
+
+.pdf_container embed {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  #button_laptop {
+    display: none;
+  }
+
+  #button_mobile {
+    display: inline;
+  }
+
+  .pdf_container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 0;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .pdf_container embed {
+    width: 100px;
+    height: 200px;
   }
 }
 
@@ -660,11 +710,12 @@ header {
 /* our committees  */
 .commiteeSection {
   position: absolute;
-  top: 360vh;
-  height: 50vh;
+  top: 350vh;
+  height: 60vh;
   left: 0;
   right: 0;
   text-align: center;
+  background-color: #f8f8f8;
 }
 
 @media screen and (max-width: 768px) {
@@ -676,16 +727,115 @@ header {
 
 /* footer  */
 
-footer {
-  top: 370vh;
+.footer-distributed {
+  top: 410vh;
   bottom: 0;
   left: 0;
   right: 0;
+  height: 40vh;
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #090089;
+  color: #fff;
+}
+
+.footer-left {
+  width: 30%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-divider {
+  height: 30vh;
+  width: 2px;
+  background-color: #fff;
+}
+
+.footer-right {
+  width: 30%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-left .logo {
+  margin-bottom: 20px;
+}
+
+.footer-left .footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 10px 10px 10px;
+}
+
+.footer-left .footer-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: medium;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.footer-company-about {
+  width: 80%;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-icons a ion-icon {
+  width: 25px;
+  height: 25px;
+  color: #fff;
 }
 
 @media screen and (max-width: 768px) {
-  footer {
+  .footer-distributed {
     top: 580vh;
+    height: 60vh;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .footer-divider {
+    height: 1px;
+    width: 45vh;
+    background-color: #fff;
+  }
+  .footer-left {
+    width: 90%;
+    height: 60%;
+    justify-content: center;
+  }
+  .footer-right {
+    width: 90%;
+    height: 60%;
+    text-align: center;
+    justify-content: center;
+    gap: 50px;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo .footerLogo {
+    margin-bottom: 0px;
+  }
+
+  #logo-img {
+    width: 40px;
   }
 }
