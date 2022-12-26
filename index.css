@@ -715,7 +715,11 @@ header {
 }
 
 .card {
-  width: 25rem;
+  width: 23rem;
+}
+
+.owl-carousel {
+  margin-left: 5rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -725,9 +729,6 @@ header {
   }
   .comHead {
     font-size: 25px;
-  }
-  .card {
-    width: 15rem;
   }
 }
 

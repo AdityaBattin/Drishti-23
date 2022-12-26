@@ -4,17 +4,20 @@ $(".owl-carousel").owlCarousel({
   nav: false,
   responsiveClass: true,
   animateOut: "fadeOut",
+  autoplay: true,
+  autoplayTimeout: 1250,
+  autoplayHoverPause: true,
   responsive: {
-    300: {
+    200: {
+      items: 1,
+    },
+    700: {
       items: 2,
     },
-    600: {
-      items: 2,
-    },
-    1000: {
+    1030: {
       items: 3,
     },
-    1400: {
+    1450: {
       items: 4,
     },
   },
