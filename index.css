@@ -697,11 +697,25 @@ header {
 .commiteeSection {
   position: absolute;
   top: 350vh;
-  height: 60vh;
+  height: 80vh;
   left: 0;
   right: 0;
   text-align: center;
   background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.comHead {
+  font-family: "EB Garamond", serif;
+  font-size: 3rem;
+}
+
+.card {
+  width: 25rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -709,12 +723,18 @@ header {
     top: 500vh;
     height: 80vh;
   }
+  .comHead {
+    font-size: 25px;
+  }
+  .card {
+    width: 15rem;
+  }
 }
 
 /* footer  */
 
 .footer-distributed {
-  top: 410vh;
+  top: 430vh;
   bottom: 0;
   left: 0;
   right: 0;
@@ -793,17 +813,18 @@ header {
     height: 50vh;
     flex-direction: column;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
   }
   .footer-divider {
     height: 1px;
-    width: 45vh;
+    width: 40vh;
     background-color: #fff;
   }
   .footer-left {
     width: 90%;
     height: 30%;
     justify-content: center;
+    text-align: center;
   }
   .footer-right {
     width: 90%;
