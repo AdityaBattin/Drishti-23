@@ -7,6 +7,11 @@
     <title>HOME | DRISHTI'23</title>
     <link rel="stylesheet" href="/index.css" />
 
+    <!-- aos library css link  -->
+    <!-- animation on scroll  -->
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- bootstrap  -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
@@ -35,12 +40,6 @@
          font-family: 'Source Sans Pro', sans-serif;
         -->
 
-    <!-- animation on scroll  -->
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-    /> -->
-    <!-- commitee owl crowsel -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
@@ -126,28 +125,28 @@
           <div class="container" id="cont1">
             <h1>Revinear</h1>
             <p>Immenting Back Stronger</p>
-            <a href="#" class="btn btn-sm btn-light">view gallery</a>
+            <a href="#" class="btn btn-sm btn-light">view more</a>
           </div>
         </div>
         <div id="slide2" class="carousel-item">
           <div class="container">
             <h1>Exebition '22</h1>
             <p>Drishti Organizes it every year</p>
-            <a href="#" class="btn btn-sm btn-info">view gallery</a>
+            <a href="#" class="btn btn-sm btn-info">view more</a>
           </div>
         </div>
         <div id="slide3" class="carousel-item">
           <div class="container">
             <h1>FacePainting '22</h1>
             <p>Express yourself with Colors</p>
-            <a href="#" class="btn btn-sm btn-warning">view gallary</a>
+            <a href="#" class="btn btn-sm btn-warning">view more</a>
           </div>
         </div>
         <div id="slide4" class="carousel-item">
           <div class="container">
             <h1>MoonLit Mic '22</h1>
             <p>standup, singing, poetry anything the stage is yours</p>
-            <a href="#" class="btn btn-sm btn-success">view gallery</a>
+            <a href="#" class="btn btn-sm btn-success">view more</a>
           </div>
         </div>
       </div>
@@ -172,16 +171,16 @@
     </div>
     <!-- AboutUsSection  -->
     <section id="About-us-section" class="aboutUsSection">
-      <div class="aboutusHead">About Us</div>
+      <div class="aboutusHead" data-aos="zoom-in">About Us</div>
       <div class="aboutSectionContainer">
-        <div class="drishtiYearLogo">
+        <div class="drishtiYearLogo" data-aos="fade-right">
           <div class="title">Team Drishti</div>
           <div class="theme">REVINER</div>
           <div class="drishtiYearLogoImg">
             <img src="./assets/yearlogo.jpg" alt="Year_Logo" />
           </div>
         </div>
-        <div class="drishtiInfo">
+        <div class="drishtiInfo" data-aos="fade-left">
           <p class="ParaInfo">
             Drishti is the official magazine of SGGSIE&T, it is completely
             designed by a team of students.
@@ -262,12 +261,12 @@
     </div>
     <!-- all magazines preview -->
     <section id="Magazine-section" class="magazineSection">
-      <div class="section-Title">
+      <div class="section-Title" data-aos="zoom-in-down">
         <span style="color: black">Previous</span>
         <span style="color: #fedb39">Magazine</span>
       </div>
       <div class="wrapper">
-        <div class="Mycard">
+        <div class="Mycard" data-aos="zoom-in">
           <img class="cardImg" src="./assets/adhvan.jpg" alt="adhvan" />
           <div class="cardInfo">
             <h3 class="card-Title">ADHVAN</h3>
@@ -275,7 +274,7 @@
             <a herf="#" download="#" class="cardDownBtn">Download</a>
           </div>
         </div>
-        <div class="Mycard">
+        <div class="Mycard" data-aos="zoom-in">
           <img class="cardImg" src="./assets/antarnaad.jpg" alt="antarnaad" />
           <div class="cardInfo">
             <h3 class="card-Title">ANTARNAAD</h3>
@@ -283,7 +282,7 @@
             <a herf="#" download="#" class="cardDownBtn">Download</a>
           </div>
         </div>
-        <div class="Mycard">
+        <div class="Mycard" data-aos="zoom-in">
           <img class="cardImg" src="./assets/dhruti.jpg" alt="dhruti" />
           <div class="cardInfo">
             <h3 class="card-Title">DHRUTI</h3>
@@ -291,7 +290,7 @@
             <a herf="#" download="#" class="cardDownBtn">Download</a>
           </div>
         </div>
-        <div class="Mycard">
+        <div class="Mycard" data-aos="zoom-in">
           <img class="cardImg" src="./assets/sparkle.jpg" alt="sparkle" />
           <div class="cardInfo">
             <h3 class="card-Title">SPARKLE</h3>
@@ -303,7 +302,7 @@
     </section>
     <!-- purvarang section  -->
     <section id="purvarang" class="purvarangSection">
-      <div class="leftPurva">
+      <div class="leftPurva" data-aos="zoom-in-right">
         <div class="purv_sub_head">Our Newsletter</div>
         <div class="purvarangHead">
           <span>About</span>
@@ -329,7 +328,7 @@
           </div>
         </div>
       </div>
-      <div class="purvarangYearLogo">
+      <div class="purvarangYearLogo" data-aos="zoom-in-left">
         <img src="./assets/purva_logo.jpg" alt="Purva_Year_Logo" />
       </div>
     </section>
@@ -341,7 +340,7 @@
       </h3>
       <div class="owl-carousel owl-theme">
         <div class="item">
-          <div class="card">
+          <div class="card" data-aos="flip-up">
             <img
               src="/assets/commiteeLogo/artDesign.jpg"
               class="card-img-top"
@@ -357,7 +356,7 @@
           </div>
         </div>
         <div class="item">
-          <div class="card">
+          <div class="card" data-aos="flip-up">
             <img
               src="/assets/commiteeLogo/webCom.jpg"
               class="card-img-top"
@@ -373,7 +372,7 @@
           </div>
         </div>
         <div class="item">
-          <div class="card">
+          <div class="card" data-aos="flip-up">
             <img
               src="/assets/commiteeLogo/magDesign.jpg"
               class="card-img-top"
@@ -389,7 +388,7 @@
           </div>
         </div>
         <div class="item">
-          <div class="card">
+          <div class="card" data-aos="flip-up">
             <img
               src="/assets/commiteeLogo/english.jpg"
               class="card-img-top"
@@ -405,7 +404,7 @@
           </div>
         </div>
         <div class="item">
-          <div class="card">
+          <div class="card" data-aos="flip-up">
             <img
               src="/assets/commiteeLogo/hindi.jpg"
               class="card-img-top"
@@ -421,7 +420,7 @@
           </div>
         </div>
         <div class="item">
-          <div class="card">
+          <div class="card" data-aos="flip-up">
             <img
               src="/assets/commiteeLogo/marathi.jpg"
               class="card-img-top"
@@ -437,7 +436,7 @@
           </div>
         </div>
         <div class="item">
-          <div class="card">
+          <div class="card" data-aos="flip-up">
             <img
               src="/assets/commiteeLogo/photography.jpg"
               class="card-img-top"
@@ -453,7 +452,7 @@
           </div>
         </div>
         <div class="item">
-          <div class="card">
+          <div class="card" data-aos="flip-up">
             <img
               src="/assets/commiteeLogo/publicity.jpg"
               class="card-img-top"
@@ -518,12 +517,37 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   </body>
-
   <script src="/index.js"></script>
+
+  <!-- AOS INSERTION AND INITIALIZATION  -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      // Global settings:
+      disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+      startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
+      initClassName: "aos-init", // class applied after initialization
+      animatedClassName: "aos-animate", // class applied on animation
+      useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+      disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+      debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+      throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+      // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+      offset: 120, // offset (in px) from the original trigger point
+      delay: 0, // values from 0 to 3000, with step 50ms
+      duration: 2000, // values from 0 to 3000, with step 50ms
+      easing: "ease", // default easing for AOS animations
+      once: false, // whether animation should happen only once - while scrolling down
+      mirror: false, // whether elements should animate out while scrolling past them
+      anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+    });
+  </script>
 
   <!-- jquerry + owl crousal -->
   <script src="js/swiper-bundle.js"></script>
   <!-- bootstrap -->
+
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
@@ -539,7 +563,4 @@
     nomodule
     src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
   ></script>
-
-  <!-- animation on scroll library  -->
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script> -->
 </html>

@@ -607,6 +607,13 @@ header {
   }
 }
 
+@media screen and (max-width: 400px) {
+  .magazineSection {
+    top: 190vh;
+    height: auto;
+  }
+}
+
 /* purvarang section */
 .purvarangSection {
   position: absolute;
@@ -693,6 +700,14 @@ header {
   }
 }
 
+@media screen and (max-width: 400px) {
+  .purvarangSection {
+    flex-direction: column-reverse;
+    top: 415vh;
+    height: 130vh;
+  }
+}
+
 /* our committees  */
 .commiteeSection {
   position: absolute;
@@ -719,7 +734,7 @@ header {
 }
 
 .owl-carousel {
-  margin-left: 5rem;
+  margin-left: 7rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -729,6 +744,16 @@ header {
   }
   .comHead {
     font-size: 25px;
+  }
+  .owl-carousel {
+    margin-left: 2rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .commiteeSection {
+    top: 545vh;
+    height: 80vh;
   }
 }
 
@@ -846,5 +871,15 @@ header {
 
   #logo-img {
     width: 40px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .footer-distributed {
+    top: 625vh;
+    height: 50vh;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
   }
 }
